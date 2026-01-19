@@ -1,0 +1,14 @@
+services:
+  orion-gateway:
+    build: .
+    ports:
+      - "8762:8762"
+    environment:
+      - EUREKA_URL=http://eureka-server:8761/eureka/
+      - HOSTNAME=orion-gateway
+    networks:
+      - platform-network
+
+networks:
+  platform-network:
+    external: true
