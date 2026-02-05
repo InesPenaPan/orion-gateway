@@ -43,3 +43,4 @@ Navega hasta el directorio raíz del proyecto y ejecuta el siguiente comando en 
 ```bash
 docker compose up --build -d
 ```
+Una vez levantado el contenedor, la API estará disponible en el puerto `8762`. Puedes verificar el funcionamiento realizando peticiones a través de tu navegador, cURL o Postman.
