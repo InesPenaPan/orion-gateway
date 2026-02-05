@@ -19,3 +19,11 @@ El proyecto integrando las siguientes librerías:
 * **Spring Cloud Netflix Eureka Client**: Habilita la comunicación con el servidor de descubrimiento.
 * **Spring Boot Actuator**: Monitorización del estado de salud del servicio.
 * **Lombok**: Librería para la reducción de código repetitivo mediante anotaciones.
+
+## ⚡ Ejecucción
+
+Navega hasta el directorio raíz del proyecto y ejecuta el siguiente comando en tu terminal:
+
+```bash
+docker compose up --build -d
+```
