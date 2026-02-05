@@ -24,7 +24,7 @@ El proyecto integrando las siguientes librerías:
 
 | Endpoint | Descripción | 
 | :--- | :--- | 
-| `GET /ms-finance/finance/{ticker}` | Calcula ratios financieros y métricas de crecimiento a partir de los estados contables de la entidad. |
+| `**POST** /ms-finance/finance/{ticker}` | Calcula ratios financieros y métricas de crecimiento a partir de los estados contables de la entidad. |
 | `GET /ms-finance/news/{ticker}` | Recupera en tiempo real noticias vinculadas al símbolo bursátil. |
 | `GET /ms-sector-analysis/market/{ticker}` | Recupera métricas bursátiles de un ETF representativo. |
 | `GET /ms-sector-analysis/trends/{ticker}` | Utiliza la función de sugerencias de Google Trends para proponer palabras clave y temas relacionados con el sector. |
