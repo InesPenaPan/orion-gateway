@@ -20,6 +20,16 @@ El proyecto integrando las siguientes librerías:
 * **Spring Boot Actuator**: Monitorización del estado de salud del servicio.
 * **Lombok**: Librería para la reducción de código repetitivo mediante anotaciones.
 
+## 🌐 Endpoints
+
+| Endpoint | Descripción | 
+| :--- | :--- | 
+| `GET /ms-finance/finance/{ticker}` | Calcula ratios financieros y métricas de crecimiento a partir de los estados contables de la entidad. |
+| `GET /ms-finance/news/{ticker}` | Recupera en tiempo real noticias vinculadas al símbolo bursátil. |
+| `GET /ms-sector-analysis/market/{ticker}` | Recupera métricas bursátiles de un ETF representativo. |
+| `GET /ms-sector-analysis/trends/{ticker}` | Utiliza la función de sugerencias de Google Trends para proponer palabras clave y temas relacionados con el sector. |
+| `GET /ms-sector-analysis/time-series/{keyword}` | Proporciona una serie temporal que muestra la popularidad relativa de un término de búsqueda en Google. |
+
 ## ⚡ Ejecucción
 
 Navega hasta el directorio raíz del proyecto y ejecuta el siguiente comando en tu terminal:
