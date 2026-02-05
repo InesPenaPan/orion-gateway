@@ -24,17 +24,17 @@ El proyecto integrando las siguientes librerías:
 
 | Endpoint | Descripción | 
 | :--- | :--- | 
-| `**POST** /ms-finance/finance/{ticker}` | Calcula ratios financieros y métricas de crecimiento a partir de los estados contables de la entidad. |
-| `GET /ms-finance/news/{ticker}` | Recupera en tiempo real noticias vinculadas al símbolo bursátil. |
-| `GET /ms-sector-analysis/market/{ticker}` | Recupera métricas bursátiles de un ETF representativo. |
-| `GET /ms-sector-analysis/trends/{ticker}` | Utiliza la función de sugerencias de Google Trends para proponer palabras clave y temas relacionados con el sector. |
-| `GET /ms-sector-analysis/time-series/{keyword}` | Proporciona una serie temporal que muestra la popularidad relativa de un término de búsqueda en Google. |
-| `GET /ms-news/news/{company}` | Consulta las menciones en prensa de los últimos siete días sobre una entidad. |
-| `GET /ms-crm/clients` | Lista todas las entidades corporativas registradas en el CRM. |
-| `GET /ms-crm/opportunities` | Lista global de oportunidades con nombres de cliente y gestor vinculados. |
-| `GET /ms-crm/opportunities/user/{userId}` | Métricas de rendimiento y oportunidades asignadas a un usuario específico. |
-| `GET /ms-crm/opportunities/client/{clientId}` | Métricas de rendimiento y oportunidades asignadas a un usuario específico. |
-| `GET /ms-crm/opportunities/clients/user/{userId}` | Relación de clientes únicos que integran la cartera de un usuario. |
+| `POST /ms-finance/finance/{ticker}` | Calcula ratios financieros y métricas de crecimiento a partir de los estados contables de la entidad. |
+| `POST /ms-finance/news/{ticker}` | Recupera en tiempo real noticias vinculadas al símbolo bursátil. |
+| `POST /ms-sector-analysis/market/{ticker}` | Recupera métricas bursátiles de un ETF representativo. |
+| `POST /ms-sector-analysis/trends/{ticker}` | Utiliza la función de sugerencias de Google Trends para proponer palabras clave y temas relacionados con el sector. |
+| `POST /ms-sector-analysis/time-series/{keyword}` | Proporciona una serie temporal que muestra la popularidad relativa de un término de búsqueda en Google. |
+| `POST /ms-news/news/{company}` | Consulta las menciones en prensa de los últimos siete días sobre una entidad. |
+| `POST /ms-crm/clients` | Lista todas las entidades corporativas registradas en el CRM. |
+| `POST /ms-crm/opportunities` | Lista global de oportunidades con nombres de cliente y gestor vinculados. |
+| `POST /ms-crm/opportunities/user/{userId}` | Métricas de rendimiento y oportunidades asignadas a un usuario específico. |
+| `POST /ms-crm/opportunities/client/{clientId}` | Métricas de rendimiento y oportunidades asignadas a un usuario específico. |
+| `POST /ms-crm/opportunities/clients/user/{userId}` | Relación de clientes únicos que integran la cartera de un usuario. |
 
 ## ⚡ Ejecucción
 
@@ -44,3 +44,5 @@ Navega hasta el directorio raíz del proyecto y ejecuta el siguiente comando en 
 docker compose up --build -d
 ```
 Una vez levantado el contenedor, la API estará disponible en el puerto `8762`. Puedes verificar el funcionamiento realizando peticiones a través de tu navegador, cURL o Postman.
+
+[IMPORTANTE] Es imprescindible incluir la cabecera `Content-Type: application/json` en todas las peticiones, ya que el Gateway procesa la lógica de enrutamiento a través del cuerpo de la solicitud.
