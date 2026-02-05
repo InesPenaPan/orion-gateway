@@ -8,4 +8,4 @@ Funcionalidades principales:
 * Traduce peticiones POST a parámetros GET mediante filtros personalizados.
 * Resuelve nombres lógicos a través de Eureka para el enrutamiento dinámico.
 
-Para más detalles sobre la gestión de rutas y filtros, consulta la [Documentación de Sping Cloud Gateway]([https://docs.spring.io/spring-cloud-netflix/docs/current/reference/html/#service-discovery-eureka-clients](https://docs.spring.io/spring-cloud-gateway/reference/index.html)).
+Para más detalles sobre la gestión de rutas y filtros, consulta la [Documentación de Sping Cloud Gateway](https://docs.spring.io/spring-cloud-gateway/reference/index.html).
