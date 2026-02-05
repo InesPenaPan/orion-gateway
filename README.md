@@ -29,6 +29,12 @@ El proyecto integrando las siguientes librerías:
 | `GET /ms-sector-analysis/market/{ticker}` | Recupera métricas bursátiles de un ETF representativo. |
 | `GET /ms-sector-analysis/trends/{ticker}` | Utiliza la función de sugerencias de Google Trends para proponer palabras clave y temas relacionados con el sector. |
 | `GET /ms-sector-analysis/time-series/{keyword}` | Proporciona una serie temporal que muestra la popularidad relativa de un término de búsqueda en Google. |
+| `GET /ms-news/news/{company}` | Consulta las menciones en prensa de los últimos siete días sobre una entidad. |
+| `GET /ms-crm/clients` | Lista todas las entidades corporativas registradas en el CRM. |
+| `GET /ms-crm/opportunities` | Lista global de oportunidades con nombres de cliente y gestor vinculados. |
+| `GET /ms-crm/opportunities/user/{userId}` | Métricas de rendimiento y oportunidades asignadas a un usuario específico. |
+| `GET /ms-crm/opportunities/client/{clientId}` | Métricas de rendimiento y oportunidades asignadas a un usuario específico. |
+| `GET /ms-crm/opportunities/clients/user/{userId}` | Relación de clientes únicos que integran la cartera de un usuario. |
 
 ## ⚡ Ejecucción
 
