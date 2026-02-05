@@ -56,3 +56,31 @@ Estructura base del Payload:
     "body": {}
 }
 ```
+
+### 📂 Estructura del Proyecto
+
+```bash
+orion-gateway/
+├── src/main/java/com/orion/gateway/
+│   ├── config/                             # Configuración de beans y mapeadores
+│   │   └── MapperConfig.java
+│   ├── decorator/                          # Decoradores para la transformación de peticiones
+│   │   ├── GetRequestDecorator.java
+│   │   ├── PostRequestDecorator.java
+│   │   └── RequestDecoratorFactory.java
+│   ├── filter/                             # Filtros personalizados de Spring Cloud Gateway
+│   │   └── RequestTranslationFilter.java
+│   ├── model/                              # Modelos de datos y DTOs de entrada
+│   │   └── GatewayRequest.java
+│   ├── utils/                              # Utilidades para extracción de datos del body
+│   │   └── RequestBodyExtractor.java
+│   └── GatewayApplication.java             # Clase principal de Spring Boot
+├── src/main/resources/
+│   └── application.yaml                    # Configuración de rutas, filtros y Eureka
+├── docker-compose.yml                      # Orquestación del despliegue en contenedores
+├── Dockerfile                              # Definición de la imagen Docker del componente
+├── .mvn/                                   # Archivos de configuración de Maven Wrapper
+├── mvnw                                    # Maven Wrapper (Linux/macOS)
+├── mvnw.cmd                                # Maven Wrapper (Windows)
+└── pom.xml                                 # Definición de dependencias y plugins de Maven
+```
