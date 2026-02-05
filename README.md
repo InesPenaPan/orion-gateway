@@ -45,4 +45,14 @@ docker compose up --build -d
 ```
 Una vez levantado el contenedor, la API estará disponible en el puerto `8762`. Puedes verificar el funcionamiento realizando peticiones a través de tu navegador, cURL o Postman.
 
-[IMPORTANTE] Es imprescindible incluir la cabecera `Content-Type: application/json` en todas las peticiones, ya que el Gateway procesa la lógica de enrutamiento a través del cuerpo de la solicitud.
+**[IMPORTANTE]** Es imprescindible incluir la cabecera `Content-Type: application/json` en todas las peticiones, ya que el Gateway procesa la lógica de enrutamiento a través del cuerpo de la solicitud.
+
+Estructura base del Payload:
+
+```bash
+{
+    "targetMethod": "GET",
+    "queryParams": {},
+    "body": {}
+}
+```
